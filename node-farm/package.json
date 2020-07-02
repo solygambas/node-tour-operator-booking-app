@@ -1,0 +1,27 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solygambas/node-bootcamp.git"
+  },
+  "author": "solygambas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solygambas/node-bootcamp/issues"
+  },
+  "homepage": "https://github.com/solygambas/node-bootcamp#readme",
+  "dependencies": {
+    "slugify": "^1.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
