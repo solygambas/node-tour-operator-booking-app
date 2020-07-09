@@ -123,6 +123,10 @@ tourSchema.virtual("durationWeeks").get(function() {
   return this.duration / 7;
 });
 
+// tourSchema.index({ price: 1 });
+tourSchema.index({ price: 1, ratingsAverage: -1 });
+tourSchema.index({ slug: 1 });
+
 // DOCUMENT MIDDLEWARE: runs before .save() and .create()
 tourSchema.pre("save", function(next) {
   this.slug = slugify(this.name, { lower: true });

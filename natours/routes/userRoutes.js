@@ -7,6 +7,7 @@ const {
   deleteUser,
   updateMe,
   deleteMe,
+  getMe,
 } = require("../controllers/userController");
 const {
   signup,
@@ -24,9 +25,16 @@ router.post("/signup", signup);
 router.post("/login", login);
 router.post("/forgotPassword", forgotPassword);
 router.patch("/resetPassword/:token", resetPassword);
-router.patch("/updateMyPassword", protect, updatePassword);
-router.patch("/updateMe", protect, updateMe);
-router.delete("/deleteMe", protect, deleteMe);
+
+// Protect all routes after this middleware
+router.use(protect);
+
+router.patch("/updateMyPassword", updatePassword);
+router.patch("/updateMe", updateMe);
+router.delete("/deleteMe", deleteMe);
+router.get("/me", getMe, getUser);
+
+router.use(restrictTo("admin"));
 
 router
   .route("/")
