@@ -1,17 +1,13 @@
 const express = require("express");
 const viewsController = require("../controllers/viewsController");
 const { isLoggedIn, protect } = require("../controllers/authController");
-const { createBookingCheckout } = require("../controllers/bookingController");
 
 const router = express.Router();
 
+router.use(viewsController.alerts);
+
 router.get("/me", protect, viewsController.getAccount);
-router.get(
-  "/my-tours",
-  protect,
-  createBookingCheckout,
-  viewsController.getMyTours
-);
+router.get("/my-tours", protect, viewsController.getMyTours);
 router.post("/submit-user-data", protect, viewsController.updateUserData);
 
 router.use(isLoggedIn);
