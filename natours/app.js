@@ -8,6 +8,7 @@ const hpp = require("hpp");
 const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 const compression = require("compression");
+const cors = require("cors");
 
 const tourRouter = require("./routes/tourRoutes");
 const userRouter = require("./routes/userRoutes");
@@ -26,8 +27,15 @@ app.set("views", path.join(__dirname, "views"));
 // Serving static files
 app.use(express.static(path.join(__dirname, "public")));
 
-// Set security headers
+// Set security headers and implement CORS
 app.use(helmet());
+app.use(cors()); // for get and post
+// Access-Control-Allow-Origin *
+// if back-end api.natours.com, front-end natours.com:
+// app.use(cors({origin: 'https://www.natours.com'}))
+
+app.options("*", cors()); // for patch and delete
+// app.options('/api/v1/tours/:id', cors());
 
 // Development logger
 if (process.env.NODE_ENV === "development") {
