@@ -3,7 +3,7 @@
 A very simple API to understand Node.js and NPM basics.
 
 <p align="center">
-    <img src="screenshot.png?raw=true" alt="Screenshot of Node Farm">
+    <img src="screenshot.png" alt="Screenshot of Node Farm">
 </p>
 
 ## Features
