@@ -10,14 +10,14 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solygambas/node-bootcamp.git"
+    "url": "git+https://github.com/solygambas/node-tour-operator-booking-app.git"
   },
   "author": "solygambas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/solygambas/node-bootcamp/issues"
+    "url": "https://github.com/solygambas/node-tour-operator-booking-app/issues"
   },
-  "homepage": "https://github.com/solygambas/node-bootcamp#readme",
+  "homepage": "https://github.com/solygambas/node-tour-operator-booking-app#readme",
   "dependencies": {
     "slugify": "^1.4.4"
   },
