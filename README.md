@@ -8,7 +8,7 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 
 <p align="center">
   <a href="https://node-travel-app.herokuapp.com/">
-    <img src="screenshot.png" alt="See Demo deployed on Heroku">
+    <img src="screenshot.png?raw=true" alt="See Demo deployed on Heroku">
   </a>
 </p>
 
