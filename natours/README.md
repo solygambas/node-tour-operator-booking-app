@@ -16,15 +16,28 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 
 - building a REST API with Express, logging requests with Morgan and sending JSend responses.
 - using the MVC (Model-View-Controller) architecture with separate routers.
+- rendering a server-side website with Pug templates.
+- handling log in, sign up and book tour actions with JavaScript and Axios.
+- displaying day-by-day itinerary for each tour with Mapbox.
+- showing user-friendly alerts with success/error messages.
+- updating user settings, profile picture and showing bookings made in user dashboard.
+- accepting credit card payments with Stripe Checkout and listening to Stripe webhooks.
+- sending emails with Pug templates, Nodemailer, Mailtrap and Sendgrid.
+- uploading files with multer and processing images with sharp.
+- deploying on Heroku.
 
 ## MongoDB and Mongoose
 
-- performing CRUD operations with MongoDB database locally and on the Atlas platform.
+- performing CRUD operations with MongoDB database locally and on MongoDB Atlas.
 - writing a script to import data into MongoDB.
 - filtering, sorting, aliasing and handling pagination with Mongoose.
 - manipulating data with aggregation pipeline and operators.
 - leveraging Mongoose pre and post hooks: document middleware, aggregate middleware and query middleware.
 - validating data and creating custom validators with Mongoose schemas and validator.
+- modeling relationships between data, embedding and referencing.
+- creating a factory function for CRUD operations on Tours, Users, Reviews and Bookings.
+- using indexes, modeling geospatial data with $geoWithin and $geoNear operators.
+- publishing API documentation with Postman.
 
 ## Error handling
 
@@ -36,20 +49,13 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 ## Authentication and authorization
 
 - hashing passwords with bcryptjs.
-- building a complete authentication workflow with JWT: user sign up, log in and lost password.
+- building a complete authentication workflow with JWT: user sign up, log in and reset password via email.
 - protecting routes and restricting access according to user role (user, guide, lead guide, admin).
-- sending emails with a reset token.
 
 ## Security
 
-- implementing security best practices with express-rate-limit and helmet.
-- sending tokens in secure cookies.
+- implementing security best practices with express-rate-limit, helmet and CORS.
+- sending tokens in secure cookies and reading them with cookie-parser.
 - sanitizing data with express-mongo-sanitize, xss-clean and hpp.
-
-## Modeling data and advanced features
-
-## Pug templates
-
-...
 
 Based on [Node.js, Express, MongoDB & More: The Complete Bootcamp](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/) by Jonas Schmedtmann (2019).
