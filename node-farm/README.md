@@ -1,4 +1,4 @@
-# Node Farm
+# Node.js Basics - Node Farm
 
 A very simple API to understand Node.js and NPM basics.
 

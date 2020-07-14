@@ -9,7 +9,9 @@ A very simple API to understand Node.js and NPM basics.
 [See node-farm folder](https://github.com/solygambas/node-tour-operator-booking-app/tree/master/node-farm)
 
 <p align="center">
+  <a href="https://github.com/solygambas/node-tour-operator-booking-app/tree/master/node-farm">
     <img src="node-farm/screenshot.png" alt="Screenshot of Node Farm">
+  </a>
 </p>
 
 ### Features
