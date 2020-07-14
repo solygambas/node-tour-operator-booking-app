@@ -20,7 +20,7 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 - handling log in, sign up and book tour actions with JavaScript and Axios.
 - displaying day-by-day itinerary for each tour with Mapbox.
 - showing user-friendly alerts with success/error messages.
-- updating user settings, profile picture and showing bookings made in user dashboard.
+- updating user settings, profile picture and showing bookings in user dashboard.
 - accepting credit card payments with Stripe Checkout and listening to Stripe webhooks.
 - sending emails with Pug templates, Nodemailer, Mailtrap and Sendgrid.
 - uploading files with multer and processing images with sharp.
@@ -37,7 +37,7 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 - modeling relationships between data, embedding and referencing.
 - creating a factory function for CRUD operations on Tours, Users, Reviews and Bookings.
 - using indexes, modeling geospatial data with $geoWithin and $geoNear operators.
-- publishing API documentation with Postman.
+- publishing API documentation on Postman.
 
 ## Error handling
 
