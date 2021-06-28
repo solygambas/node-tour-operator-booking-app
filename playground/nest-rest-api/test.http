@@ -1,0 +1,12 @@
+# ## GET ITEMS
+GET http://localhost:3000/items HTTP/1.1
+
+## CREATE ITEM
+# POST http://localhost:3000/items HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name": "New Item",
+#     "qty": 100,
+#     "description": "This is item one"
+# }
