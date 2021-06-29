@@ -2,7 +2,7 @@
 GET http://localhost:3000/items HTTP/1.1
 
 ### GET SINGLE ITEM
-GET http://localhost:3000/items/346 HTTP/1.1
+GET http://localhost:3000/items/60daae4e5ed27116f8e19d12 HTTP/1.1
 
 ### CREATE ITEM
 POST http://localhost:3000/items HTTP/1.1
@@ -15,10 +15,10 @@ Content-Type: application/json
 }
 
 ### DELETE SINGLE ITEM
-DELETE http://localhost:3000/items/1000 HTTP/1.1
+DELETE http://localhost:3000/items/60daae4e5ed27116f8e19d12 HTTP/1.1
 
 ### UPDATE SINGLE ITEM
-PUT http://localhost:3000/items/1000 HTTP/1.1
+PUT http://localhost:3000/items/60daafddf3b0a10518bb77ba HTTP/1.1
 Content-Type: application/json
 
 {
