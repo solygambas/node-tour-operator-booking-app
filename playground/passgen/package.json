@@ -1,7 +1,7 @@
 {
   "name": "passgen",
   "version": "1.0.0",
-  "description": "A simple password generator.",
+  "description": "A simple command-line password generator using Commander and Chalk.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
