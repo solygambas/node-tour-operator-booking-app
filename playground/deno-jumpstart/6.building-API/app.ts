@@ -1,4 +1,10 @@
 import { Application, Router, send } from "https://deno.land/x/oak/mod.ts";
+import {
+  getAllBooks,
+  getBook,
+  createBook,
+  deleteBook,
+} from "./controllers/bookController.ts";
 
 const app = new Application();
 const router = new Router();
@@ -19,11 +25,17 @@ router
 
   // Static content
   // https://stackoverflow.com/questions/66406346/how-to-serve-css-using-oak
-  .get("/static/:path+", async (ctx) => {
-    await send(ctx, ctx.request.url.pathname, {
+  .get("/static/:path+", async (context) => {
+    await send(context, context.request.url.pathname, {
       root: `${Deno.cwd()}/playground/deno-jumpstart/6.building-API/public`,
     });
-  });
+  })
+
+  // API Routes
+  .get("/books", getAllBooks)
+  .get("/books/:id", getBook)
+  .post("/books", createBook)
+  .delete("/books/:id", deleteBook);
 
 app.use(router.routes());
 app.use(router.allowedMethods());

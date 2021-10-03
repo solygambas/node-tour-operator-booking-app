@@ -1,0 +1,24 @@
+### GET ALL BOOKS
+GET http://localhost:3000/books HTTP/1.1
+
+### GET SINGLE BOOK
+GET http://localhost:3000/books/3 HTTP/1.1
+
+### GET NON EXISTING BOOK
+GET http://localhost:3000/books/322 HTTP/1.1
+
+### ADD BOOK
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "the colour of magic",
+    "author": "terry pratchett",
+    "pages": 600
+}
+
+### DELETE BOOK
+DELETE http://localhost:3000/books/1 HTTP/1.1
+
+### DELETE NON EXISTING BOOK
+DELETE http://localhost:3000/books/322 HTTP/1.1

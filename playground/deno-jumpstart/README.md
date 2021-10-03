@@ -12,5 +12,7 @@ A quick introduction to Deno.
 - using --watch flag rather than denon for live reloading.
 - working with third party modules like case.
 - building an API with oak: creating a router and serving static files.
+- creating API routes with models and controllers (MVC).
+- testing the API with [VSCode Rest Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
 Based on [Deno Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gnaJdxuGvEGYQ9iHb8mxsh) by Shaun Pelling - The Net Ninja (2020).
