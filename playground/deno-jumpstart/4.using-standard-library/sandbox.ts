@@ -16,17 +16,25 @@
 
 // console.log(jsonObj);
 
-const books = [
-  { title: "the way of kings", author: "brandon sanderson" },
-  { title: "name of the wind", author: "patrick rothfuss" },
-];
+// const books = [
+//   { title: "the way of kings", author: "brandon sanderson" },
+//   { title: "name of the wind", author: "patrick rothfuss" },
+// ];
 
-await Deno.writeTextFile(
-  "./playground/deno-jumpstart/4.using-standard-library/books.json",
-  JSON.stringify(books, null, 2)
-  // 2 for spaces, https://thecodebarbarian.com/the-80-20-guide-to-json-stringify-in-javascript
-);
+// await Deno.writeTextFile(
+//   "./playground/deno-jumpstart/4.using-standard-library/books.json",
+//   JSON.stringify(books, null, 2)
+//   // 2 for spaces, https://thecodebarbarian.com/the-80-20-guide-to-json-stringify-in-javascript
+// );
 
-console.log("created books.json");
+// console.log("created books.json");
 
 // http module (server)
+// https://deno.land/std@0.109.0/http
+// oak is like express: https://github.com/oakserver/oak
+
+import { listenAndServe } from "https://deno.land/std@0.109.0/http/server.ts";
+
+listenAndServe(":3000", () => new Response("Hello ninjas\n"));
+
+console.log("listening for requests on http://localhost:3000/");

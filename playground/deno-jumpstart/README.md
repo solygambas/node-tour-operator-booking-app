@@ -9,5 +9,7 @@ A quick introduction to Deno.
 - reading and writing files with --allow-read and --allow-write permission flags.
 - using the fetch API with --allow-net permission flag.
 - working with the Standard library: uuid, fs and http modules.
+- using --watch flag rather than denon for live reloading.
+- working with third party modules like case.
 
 Based on [Deno Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gnaJdxuGvEGYQ9iHb8mxsh) by Shaun Pelling - The Net Ninja (2020).
