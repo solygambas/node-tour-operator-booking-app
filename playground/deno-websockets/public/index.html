@@ -5,10 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ninja Chat</title>
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #eee;
+        margin: 40px;
+      }
+      body,
+      button,
+      input {
+        font-family: Inter;
+      }
+      h1 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #fbfbfb;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+      }
+      .name-form,
+      .chat-form {
+        display: flex;
+        justify-content: center;
+      }
+      input {
+        padding: 16px;
+        font-size: 1.3em;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      button {
+        font-size: 1.3em;
+        padding: 16px;
+        background-color: #006eee;
+        color: #fff;
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .chat-list {
+        padding: 0;
+      }
+      .chat-list li {
+        margin: 16px 0;
+        list-style-type: none;
+      }
+      .chat-list .name {
+        color: #006eee;
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+      .chat-list .message {
+        font-size: 1.2em;
+        margin-top: 4px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ninja Chat</h1>
+    <div class="container">
+      <h1>Ninja Chat</h1>
+      <form class="name-form">
+        <input
+          type="text"
+          name="nickname"
+          id="nickname"
+          placeholder="Choose Nickname"
+          required
+        />
+        <button>Enter Chat</button>
+      </form>
+      <div class="chatroom hidden">
+        <ul class="chat-list">
+          <li>
+            <div class="name">yoshi</div>
+            <div class="message">hey all :)</div>
+          </li>
+        </ul>
+        <form class="chat-form">
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Type message..."
+            required
+          />
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
     <script></script>
   </body>
 </html>
