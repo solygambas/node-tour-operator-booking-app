@@ -11,5 +11,6 @@ A quick introduction to Deno.
 - working with the Standard library: uuid, fs and http modules.
 - using --watch flag rather than denon for live reloading.
 - working with third party modules like case.
+- building an API with oak: creating a router and serving static files.
 
 Based on [Deno Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gnaJdxuGvEGYQ9iHb8mxsh) by Shaun Pelling - The Net Ninja (2020).
