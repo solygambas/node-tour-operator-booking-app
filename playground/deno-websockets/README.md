@@ -2,6 +2,10 @@
 
 A simple web chat room using websockets with Deno.
 
+<p align="center">
+    <img src="screenshot.png">
+</p>
+
 ## Features
 
 - setting up a Deno server and creating an HTML template.

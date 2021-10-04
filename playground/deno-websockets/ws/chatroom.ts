@@ -17,7 +17,7 @@ const chatConnection = (socket: WebSocket) => {
   const uid = v4.generate();
   sockets.set(uid, socket);
   socket.onopen = () => {
-    console.log("WebSocket has been opened with ID ", uid);
+    console.log("WebSocket has been opened with ID", uid);
   };
   socket.onmessage = (e) => {
     const evObject = JSON.parse(e.data);
