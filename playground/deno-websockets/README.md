@@ -8,5 +8,7 @@ A simple web chat room using websockets with Deno.
 - using Deno.upgradeWebSocket to handle websockets.
 - giving an unique ID to each client with uuid.
 - sending messages from the client to the server.
+- broadcasting messages to all connected clients.
+- updating the DOM and displaying chat messages.
 
 Based on [Deno WebSockets Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gie1HrzOlzGZdEHLKhwNJE) by Shaun Pelling - The Net Ninja (2020).
