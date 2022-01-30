@@ -8,7 +8,11 @@ import {
   doc,
   onSnapshot,
   query,
-  where,
+  // where,
+  orderBy,
+  serverTimestamp,
+  // getDoc,
+  updateDoc,
 } from "firebase/firestore";
 
 import { firebaseConfig } from "./config";
@@ -23,7 +27,12 @@ const db = getFirestore();
 const colRef = collection(db, "books");
 
 // queries
-const q = query(colRef, where("author", "==", "patrick rothfuss"));
+const q = query(
+  colRef,
+  // where("author", "==", "patrick rothfuss"),
+  // orderBy("title", "desc")
+  orderBy("createdAt")
+);
 
 // get collection data
 // getDocs(colRef)
@@ -63,6 +72,7 @@ addBookForm.addEventListener("submit", (e) => {
   addDoc(colRef, {
     title: addBookForm.title.value,
     author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
   }).then(() => {
     addBookForm.reset();
   });
@@ -75,5 +85,29 @@ deleteBookForm.addEventListener("submit", (e) => {
   const docRef = doc(db, "books", deleteBookForm.id.value);
   deleteDoc(docRef).then(() => {
     deleteBookForm.reset();
+  });
+});
+
+// get a single document
+const docRef = doc(db, "books", "cjnVRz6xytlaEtZQlZM4");
+
+// getDoc(docRef).then((doc) => {
+//   console.log(doc.data(), doc.id);
+// });
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// update a document
+const updateBookForm = document.querySelector(".update");
+updateBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const docRef = doc(db, "books", updateBookForm.id.value);
+  updateDoc(docRef, {
+    title: updateBookForm.title.value,
+    author: updateBookForm.author.value,
+  }).then(() => {
+    updateBookForm.reset();
   });
 });
