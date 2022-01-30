@@ -11,5 +11,8 @@ A quick introduction to Firebase 9.
 - setting up a real time listener.
 - using Firestore queries and ordering data with timestamps.
 - fetching a single document.
+- enabling Firebase Authentication.
+- signing users up, logging in and logging out.
+- subscribing and unsubscribing to auth changes.
 
 Based on [Getting Started with Firebase 9](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb) by Shaun Pelling - The Net Ninja (2021).
