@@ -6,10 +6,10 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 
 A very simple API to understand Node.js and NPM basics.
 
-[See node-farm folder](https://github.com/solygambas/node-tour-operator-booking-app/tree/master/node-farm)
+[See node-farm folder](node-farm)
 
 <p align="center">
-  <a href="https://github.com/solygambas/node-tour-operator-booking-app/tree/master/node-farm">
+  <a href="node-farm">
     <img src="node-farm/screenshot.png" alt="Screenshot of Node Farm">
   </a>
 </p>
@@ -30,7 +30,7 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 
 [See API documentation on Postman](https://documenter.getpostman.com/view/11993746/T17Ke7HH?version=latest)
 
-[See natours folder](https://github.com/solygambas/node-tour-operator-booking-app/tree/master/natours)
+[See natours folder](natours)
 
 <p align="center">
   <a href="https://node-travel-app.herokuapp.com/">
