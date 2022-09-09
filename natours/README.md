@@ -2,13 +2,13 @@
 
 A tour operator booking app with a REST API using MongoDB, Mongoose, Express and Stripe.
 
-[See Demo deployed on Heroku](https://node-travel-app.herokuapp.com/)
+[See Demo deployed on Render](https://node-travel-app.onrender.com/)
 
 [See API documentation on Postman](https://documenter.getpostman.com/view/11993746/T17Ke7HH?version=latest)
 
 <p align="center">
-  <a href="https://node-travel-app.herokuapp.com/">
-    <img src="screenshot.png" alt="See Demo deployed on Heroku">
+  <a href="https://node-travel-app.onrender.com/">
+    <img src="screenshot.png" alt="See Demo deployed on Render">
   </a>
 </p>
 
@@ -24,7 +24,7 @@ A tour operator booking app with a REST API using MongoDB, Mongoose, Express and
 - accepting credit card payments with Stripe Checkout and listening to Stripe webhooks.
 - sending emails with Pug templates, Nodemailer, Mailtrap and Sendgrid.
 - uploading files with multer and processing images with sharp.
-- deploying on Heroku.
+- deploying on Render.
 
 ## MongoDB and Mongoose
 
