@@ -18,5 +18,7 @@ A quick intro to learn how to dockerize a MERN app.
 - deleting images with `docker image rm myapp`.
 - resetting Docker with `docker system prune -a`.
 - using volumes to enable live preview in development mode with `npm i` in local folder and `docker run --name myapp_c_nodemon -p 4000:4000 --rm -v /absolute-local-path/api:/app -v /app/node_modules myapp:nodemon`.
+- creating images with `docker compose up`.
+- stopping and deleting with `docker compose down --rmi all -v`.
 
 Based on [Docker Crash Course](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7) by Shaun Pelling - The Net Ninja (2022).
