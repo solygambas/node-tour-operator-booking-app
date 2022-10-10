@@ -1,0 +1,24 @@
+{
+  "name": "complete-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -L app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solygambas/node-tour-operator-booking-app.git"
+  },
+  "author": "solygambas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solygambas/node-tour-operator-booking-app/issues"
+  },
+  "homepage": "https://github.com/solygambas/node-tour-operator-booking-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
