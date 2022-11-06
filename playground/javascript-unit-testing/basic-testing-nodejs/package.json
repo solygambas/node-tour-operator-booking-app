@@ -1,0 +1,19 @@
+{
+  "name": "basic-testing-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "solygambas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vitest": "^0.9.4"
+  }
+}
