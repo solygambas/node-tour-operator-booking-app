@@ -10,5 +10,8 @@ A quick intro to learn how to write automated tests with Vitest & Jest.
 - defining behaviors and fixing errors in code.
 - testing for thrown errors and error messages.
 - organizing tests.
+- writing short and concise tests.
+- testing only one feature per test.
+- refactoring code to split functions for easier testing.
 
 Based on [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/) by Maximilian Schwarzmüller (2022).
