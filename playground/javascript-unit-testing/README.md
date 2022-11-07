@@ -18,5 +18,8 @@ A quick intro to learn how to write automated tests with Vitest & Jest.
 - testing asynchronous code with callbacks and promises.
 - using setup and cleanup hooks.
 - running tests concurrently.
+- dealing with side effects and external dependencies.
+- understanding spies and mocks.
+- creating some custom mocking logic.
 
 Based on [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/) by Maximilian Schwarzmüller (2022).
