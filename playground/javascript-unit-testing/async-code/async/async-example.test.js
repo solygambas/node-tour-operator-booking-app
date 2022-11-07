@@ -15,7 +15,7 @@ it("should generate a token value (callback)", (done) => {
 
 it("should generate a token value (promise)", () => {
   const testUserEmail = "test@test.com";
-  expect(generateTokenPromise(testUserEmail)).resolves.toBeDefined();
+  return expect(generateTokenPromise(testUserEmail)).resolves.toBeDefined();
 });
 
 it("should generate a token value (async/await)", async () => {
