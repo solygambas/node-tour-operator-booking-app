@@ -21,5 +21,7 @@ A quick intro to learn how to write automated tests with Vitest & Jest.
 - dealing with side effects and external dependencies.
 - understanding spies and mocks.
 - creating some custom mocking logic.
+- mocking global objects and functions.
+- mocking frontend features.
 
 Based on [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/) by Maximilian Schwarzmüller (2022).
