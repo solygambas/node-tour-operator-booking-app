@@ -1,6 +1,6 @@
 # JavaScript Unit Testing
 
-A quick intro to learn how to write automated tests with Vitest & Jest.
+A quick intro to learn how to write automated tests with Vitest and Jest.
 
 ## Features
 
@@ -23,5 +23,7 @@ A quick intro to learn how to write automated tests with Vitest & Jest.
 - creating some custom mocking logic.
 - mocking global objects and functions.
 - mocking frontend features.
+- accessing the DOM from inside tests with Happy DOM.
+- setting up a virtual HTML page.
 
 Based on [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/) by Maximilian Schwarzmüller (2022).
