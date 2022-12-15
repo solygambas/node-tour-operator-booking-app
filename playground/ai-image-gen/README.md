@@ -2,6 +2,10 @@
 
 A web app that generates images from scratch based on the entered text, using OpenAI and the DALL-E model.
 
+<p align="center">
+    <img src="screenshot.png" alt="Screenshot of AI Image Generator">
+</p>
+
 ## Features
 
 - setting up and installing dependencies.
